@@ -300,7 +300,7 @@ const routePlane = $("routePlane");
 let planeFlying = false;
 
 const PLANE_MSG =
-  "Pesawat kertas kecil ini terbang jauh dari Kalsel ke Jogja, " +
+  "Pesawat kertas kecil ini terbang jauh dari jogja ke kalsel, " +
   "membawa semua sayang dan doa terbaikku — khusus untukmu, Reni. " +
   "Selamat ulang tahun ya, sayang. 💌🩷";
 
