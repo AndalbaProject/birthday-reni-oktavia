@@ -19,14 +19,15 @@ const CONFIG = {
     "CINTAKUUU, kamu tahu nggak sih? Aku bersyukur banget bisa kenal kamu, bisa menjadi bagian dari hidup kamu, dan bisa menyayangi seseorang seperti kamu. Dari sekian banyak orang yang ada di dunia ini, aku senang banget karena Allah mempertemukan aku sama kamu. Kamu mungkin nggak sadar seberapa besar arti kamu buat aku, tapi kehadiran kamu sudah memberikan banyak warna dalam hidup aku. Senyum kamu bisa bikin aku ikut bahagia, cerita-cerita kecil kamu bisa bikin hari aku lebih berwarna, dan sekadar mendapatkan kabar dari kamu aja terkadang udah cukup buat bikin aku tersenyum sendiri. 🥹💗",
     "Jujur, terkadang aku sedih karena kita harus menjalani hubungan sejauh ini. Ada saatnya aku pengin banget ketemu kamu, pengin duduk berdua sama kamu, menggenggam tangan kamu, menatap mata kamu, mendengar suara kamu secara langsung, dan memeluk kamu erat tanpa harus dibatasi jarak. Ada banyak hal sederhana yang mungkin bisa dilakukan pasangan lain dengan mudah, tetapi harus kita tunggu karena keadaan. Kadang aku iri melihat pasangan yang bisa bertemu kapan saja, sedangkan aku cuma bisa memandang foto kamu sambil menghitung hari kapan ketemu kamunyaa. 🥺",
     "Tapi, sayang, meskipun jarak kita jauh, aku nggak pernah menganggap kamu jauh dari hati aku. Karena buat aku, dekat itu bukan cuma soal seberapa dekat jarak kita, tetapi juga tentang bagaimana kita tetap saling menjaga, saling percaya, dan saling mengusahakan meskipun nggak selalu bisa bersama secara langsung. Aku mungkin nggak bisa menemani kamu setiap saat, tapi aku ingin kamu tahu kalau kamu selalu punya seseorang yang peduli sama kamu di sini. Seseorang yang ingin mendengar cerita kamu, yang ingin tahu bagaimana hari-hari kamu, yang ingin menemani kamu ketika kamu sedih, dan yang ikut bahagia ketika kamu mendapatkan sesuatu yang kamu inginkan. Orang itu adalah aku, sayanggg.",
-    "Maaf ya, sayangg, kalau selama kita bersama aku masih sering melakukan kesalahan. Maaf kalau terkadang sikap aku bikin kamu kesal, perkataan aku bikin kamu sedih, atau perhatian aku belum selalu sesuai dengan apa yang kamu butuhkan. Aku memang nggak sempurna, dan aku masih harus banyak belajar untuk menjadi pasangan yang lebih baik buat kamu. Aku nggak mau cuma menjadi seseorang yang pandai mengatakan sayang, tetapi aku juga ingin membuktikan rasa sayang itu lewat sikap, kesetiaan, kejujuran, dan usaha untuk selalu menghargai perasaan kamu. Aku ingin kita sama-sama belajar, sama-sama tumbuh, dan sama-sama memperbaiki diri. 🥹🤍",
+    "maafff ya, sayangg kalau selama kita bersama aku masih sering melakukan kesalahan. Maaf kalau terkadang sikap aku bikin kamu kesal, perkataan aku bikin kamu sedih, atau perhatian aku belum selalu sesuai dengan apa yang kamu butuhkan. Aku memang nggak sempurna, dan aku masih harus banyak belajar untuk menjadi pasangan yang lebih baik buat kamu. Aku nggak mau cuma menjadi seseorang yang pandai mengatakan sayang, tetapi aku juga ingin membuktikan rasa sayang itu lewat sikap, kesetiaan, kejujuran, dan usaha untuk selalu menghargai perasaan kamu. Aku ingin kita sama-sama belajar, sama-sama tumbuh, dan sama-sama memperbaiki diri. 🥹🤍",
     "Di umur kamu yang ke-16 ini, aku berharap kamu semakin bahagia, semakin dewasa dalam menghadapi masalah, semakin semangat mengejar cita-cita, dan semakin percaya sama diri kamu sendiri. Jangan terlalu keras sama diri kamu sendiri ya, sayang. Kalau kamu capek, istirahatlah. Kalau kamu sedih, nggak apa-apa buat nangis. Kalau kamu punya masalah, kamu nggak harus selalu terlihat kuat di depan semua orang. Aku ingin kamu tahu kalau kamu juga berhak merasa lelah, berhak mendapatkan kebahagiaan, dan berhak disayangi dengan tulus. Aku mungkin nggak selalu bisa memeluk kamu ketika kamu sedih, tetapi aku akan berusaha menjadi tempat yang nyaman buat kamu bercerita. 🫂💗",
     "Aku nggak bisa menjanjikan kalau hubungan kita akan selalu berjalan mulus. Aku juga nggak bisa menjanjikan kalau kita nggak akan pernah bertengkar atau merasa bosan. Tapi aku berharap, setiap kali ada masalah, kita nggak langsung menyerah. Semoga kita selalu mau saling mendengarkan, saling memahami, dan menyelesaikan masalah tanpa harus saling menyakiti. Aku ingin kita tetap menjadi dua orang yang memilih untuk saling memperjuangkan, bukan karena hubungan kita selalu mudah, tetapi karena kita sama-sama menghargai apa yang sudah kita bangun bersama. ❤️‍🩹♾️",
     "Dan satu hal yang paling aku harapkan, semoga suatu hari nanti kita bisa merayakan ulang tahun kamu secara langsung. Aku ingin menjadi orang yang bisa datang membawa hadiah kecil, mengucapkan selamat ulang tahun tepat di depan kamu, melihat senyum kamu dari dekat, dan memeluk kamu sambil mengatakan betapa berharganya kamu buat aku. Aku ingin suatu hari nanti kita nggak perlu lagi mengandalkan layar ponsel untuk melepas rindu, nggak perlu lagi menghitung hari sampai waktu bertemu.",
     "Terima kasih sudah hadir dalam hidup aku. Terima kasih sudah bertahan sejauh ini bersama aku. Terima kasih untuk setiap kabar, setiap perhatian, setiap tawa, setiap cerita, dan setiap momen kecil yang mungkin terlihat sederhana, tetapi punya arti besar buat aku. Kalau suatu hari nanti kamu merasa dunia sedang nggak berpihak sama kamu, ingatlah bahwa kamu adalah seseorang yang sangat berharga. Kamu pantas bahagia, pantas meraih impian kamu, dan pantas mendapatkan banyak hal baik dalam hidup ini.",
-    "SELAMAT ULANG TAHUN YANG KE-16 RENI GEMASKUU 😽😽 Semoga semua doa baik selalu menyertai kamu. Semoga langkah kamu selalu dipermudah, hati kamu selalu dikuatkan, dan senyum kamu selalu punya alasan untuk kembali. Semoga di usia yang baru ini, kamu semakin dekat dengan semua impian kamuuu.",
+    "SELAMAT ULANG TAHUN YANG KE-16 RENI GEMASKUU😽😽",
+    "Semoga semua doa baik selalu menyertai kamu. Semoga langkah kamu selalu dipermudah, hati kamu selalu dikuatkan, dan senyum kamu selalu punya alasan untuk kembali. Semoga di usia yang baru ini, kamu semakin dekat dengan semua impian kamuuu",
     "Jarak boleh memisahkan kita untuk sementara, waktu boleh membuat kita harus bersabar, tetapi aku berharap semua itu nggak membuat kita lupa bagaimana caranya saling menjaga. Aku nggak ingin sekadar menjadi seseorang yang menemani kamu hari ini, tetapi aku ingin menjadi seseorang yang bisa terus mengenal kamu, melihat kamu tumbuh, mendukung impian kamu, dan berbagi kebahagiaan bersama kamu selama kita sama-sama menginginkannya.",
-    "Kayaknyaa cukup segituu ajalah ya sayangg, akuu sudah kehabisan akal 😆😆 Intinyaa selamat ulang tahun sayangkuu 😽😽 🤍🤍"
+    "kayaknyaa cukup segituu ajalah ya sayangg akuu sudah kehabisan akal😆😆 intinyaa selamat ulang tahun sayangkuu😽😽 🤍🤍"
   ],
   letterSign: "With love that never runs out 💕",
 
@@ -47,8 +48,8 @@ const CONFIG = {
 
   // ---------- playlist ----------
   songs: [
-    { title: "About You", artist: "The 1975", src: "About you.mp3" },
-    { title: "Kota Ini Tak Sama Tanpamu", artist: "", src: "ssstik.io_1793102529223.mp3" },
+    { title: "About You", artist: "The 1975", src: "lagu1.mp3" },
+    { title: "Kota Ini Tak Sama Tanpamu", artist: "", src: "lagu2.mp3" },
   ],
 
   // ---------- jar notes ----------
@@ -221,6 +222,7 @@ function stopBlowing() {
 blowBtn.addEventListener("pointerdown", startBlowing);
 blowBtn.addEventListener("pointerup", stopBlowing);
 blowBtn.addEventListener("pointerleave", stopBlowing);
+blowBtn.addEventListener("pointercancel", stopBlowing);
 blowBtn.addEventListener("contextmenu", (e) => e.preventDefault());
 
 /* ============================================================
@@ -279,7 +281,7 @@ const routePlane = $("routePlane");
 let planeFlying = false;
 
 const PLANE_MSG =
-  "Pesawat kertas kecil ini terbang jauh dari Kalses ke Jogja, " +
+  "Pesawat kertas kecil ini terbang jauh dari Kalsel ke Jogja, " +
   "membawa semua sayang dan doa terbaikku — khusus untukmu, Reni. " +
   "Selamat ulang tahun ya, sayang. 💌🩷";
 
@@ -318,6 +320,13 @@ const progressEl = $("progress");
 const progressFill = $("progressFill");
 let current = -1;
 
+/* bgm.src berupa URL absolut & ter-encode (spasi -> %20), jadi
+   bandingkan pakai decode biar lagu yang sama tidak di-reload */
+function sameAudioSrc(src) {
+  try { return decodeURIComponent(bgm.src || "").endsWith(src); }
+  catch (e) { return (bgm.src || "").endsWith(src); }
+}
+
 function renderSongs() {
   songListEl.innerHTML = "";
   CONFIG.songs.forEach((s, i) => {
@@ -343,8 +352,8 @@ function loadTrack(i, play) {
   const s = CONFIG.songs[current];
   npTitle.textContent = s.title;
   npArtist.textContent = s.artist || "";
-  const src = s.src || "lagu1.mp3";
-  if (!bgm.src.endsWith(src)) {
+  const src = s.src || (CONFIG.songs[0] && CONFIG.songs[0].src) || "";
+  if (src && !sameAudioSrc(src)) {
     bgm.src = src;
     bgm.load();
   }
@@ -403,22 +412,28 @@ function startMusicOnce() {
   if (musicStarted) return;
   musicStarted = true;
   tryPlayMusic();
-  unlockListenersOff();
 }
 function tryPlayMusic() {
   try { bgm.volume = 0.5; } catch (e) { }
-  const initial = CONFIG.songs[0]?.src || "lagu1.mp3";
-  if (!bgm.src.endsWith(initial)) {
+  const initial = (CONFIG.songs[0] && CONFIG.songs[0].src) || "";
+  if (initial && !sameAudioSrc(initial)) {
     bgm.src = initial;
     bgm.load();
   }
   const p = bgm.play();
   if (p && p.catch) {
-    p.then(() => setPlaying(true)).catch(() => {
-      // browser memblokir autoplay -> coba lagi di interaksi berikutnya
+    p.then(() => {
+      musicStarted = true;
+      setPlaying(true);
+      unlockListenersOff(); // baru dilepas setelah play benar-benar sukses
+    }).catch(() => {
+      // browser memblokir autoplay -> listener dipertahankan supaya
+      // bisa coba lagi di sentuhan berikutnya
       musicStarted = false;
       setPlaying(false);
     });
+  } else {
+    unlockListenersOff();
   }
 }
 /* coba langsung saat halaman dibuka */
