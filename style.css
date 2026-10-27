@@ -1147,3 +1147,21 @@ em { font-style: italic; }
   transition: height 0.45s ease, padding 0.45s ease, opacity 0.45s ease;
 }
 .plane-msg.show { height: auto; min-height: 70px; padding: 18px 22px; opacity: 1; display: grid; place-items: center; }
+
+/* ============================================================
+   📱 iOS SAFARI FIXES
+   ============================================================ */
+@supports (-webkit-touch-callout: none) {
+  /* background-attachment: fixed tidak didukung iOS & bikin render rusak */
+  body { background-attachment: scroll; }
+
+  /* animasi aurora blur berat di iPhone -> matikan */
+  .fx-aurora { animation: none; filter: blur(24px); }
+
+  /* backdrop-filter perlu prefix -webkit- di Safari */
+  .lock-card, .tl-card, .player, .modal-card, .lightbox, .modal,
+  .flower-msg { -webkit-backdrop-filter: blur(12px); }
+
+  /* spotlight cursor tidak relevan di layar sentuh */
+  .fx-spotlight { display: none; }
+}

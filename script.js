@@ -229,11 +229,30 @@ blowBtn.addEventListener("contextmenu", (e) => e.preventDefault());
    REVEAL ON SCROLL
    ============================================================ */
 function initReveal() {
+  const els = document.querySelectorAll(".reveal");
+  /* iPhone/Safari lama: tanpa IntersectionObserver -> tampilkan semua langsung */
+  if (!("IntersectionObserver" in window)) {
+    els.forEach((el) => el.classList.add("in"));
+    return;
+  }
   const obs = new IntersectionObserver(
-    (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("in"); }),
-    { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+    (entries) => entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("in");
+        obs.unobserve(e.target);
+      }
+    }),
+    /* threshold rendah biar section panjang (surat) tetap ter-trigger di layar kecil */
+    { threshold: 0.05, rootMargin: "0px 0px -4% 0px" }
   );
-  document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+  els.forEach((el) => obs.observe(el));
+  /* jaring pengaman iPhone: yang sudah ada di viewport saat init, langsung tampilkan */
+  setTimeout(() => {
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight && r.bottom > 0) el.classList.add("in");
+    });
+  }, 500);
 }
 
 /* ============================================================
