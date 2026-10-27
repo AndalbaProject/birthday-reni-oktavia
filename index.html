@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday Reni ♡</title>
+  <meta name="description" content="A special birthday website made with love for Reni." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 (CSS first, before custom styles) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Tailwind CSS (Play CDN) with preflight disabled to protect custom design -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false },
+      theme: {
+        extend: {
+          colors: {
+            burgundy: "#d9649f",
+            wine: "#e58ab8",
+            navy: "#ffdcec",
+            blue: "#a8547f",
+            sapphire: "#ec9ec7",
+            rose: "#dd6da6",
+            rose2: "#d67ba8",
+            gold: "#e5c158",
+            cream: "#f4f8ff",
+          },
+          fontFamily: {
+            serif: ["Cormorant Garamond", "serif"],
+            sans: ["Poppins", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- custom design loads LAST so it always wins over framework defaults -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- luxury fx layers -->
+  <div class="fx-aurora" aria-hidden="true"></div>
+  <div class="fx-stars" id="fxStars" aria-hidden="true"></div>
+  <div class="fx-spotlight" id="fxSpotlight" aria-hidden="true"></div>
+  <div class="fx-progress" id="fxProgress" aria-hidden="true"></div>
+
+  <!-- floating flower petals -->
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <!-- background music -->
+  <audio id="bgm" src="About you.mp3" preload="auto" playsinline></audio>
+
+  <!-- ============ LOADING ============ -->
+  <div class="loader" id="loader">
+    <div class="loader-flower">💐</div>
+    <p>Preparing something special for Reni...</p>
+  </div>
+
+  <!-- ============ LOCK / PASSWORD ============ -->
+  <section class="lock hidden" id="lock">
+    <div class="lock-card">
+      <div class="lock-flower">🌸</div>
+      <h1 class="lock-title">For You, Reni</h1>
+      <p class="lock-sub">Enter our secret code</p>
+      <div class="pin-dots" id="pinDots">
+        <span></span><span></span>
+      </div>
+      <div class="keypad" id="keypad">
+        <button data-key="1">1</button>
+        <button data-key="2">2</button>
+        <button data-key="3">3</button>
+        <button data-key="4">4</button>
+        <button data-key="5">5</button>
+        <button data-key="6">6</button>
+        <button data-key="7">7</button>
+        <button data-key="8">8</button>
+        <button data-key="9">9</button>
+        <button data-key="del" class="sub">✕</button>
+        <button data-key="0">0</button>
+        <button data-key="del" class="sub">↩</button>
+      </div>
+      <p class="lock-hint">Hint : tanggal spesial kita (28) 💕</p>
+    </div>
+  </section>
+
+  <!-- ============ GIFT OPENING ============ -->
+  <section class="gift hidden" id="gift">
+    <p class="gift-label">✨ Opening your gift... ✨</p>
+    <div class="giftbox" id="giftbox">
+      <div class="rays"></div>
+      <div class="gift-lid"><span class="bow">🎀</span></div>
+      <div class="gift-body"></div>
+    </div>
+    <p class="gift-tap">tap the gift ♡</p>
+  </section>
+
+  <!-- ============ BLOW THE CANDLES ============ -->
+  <section class="candle-sec hidden" id="candleSec">
+    <p class="candle-eyebrow">✨ one more thing ✨</p>
+    <h2 class="candle-title">Tiup Lilinnya, Reni! 🕯️</h2>
+    <p class="candle-sub">Pekerjakan satu permintaan dulu... lalu tiup semua apinya</p>
+    <div class="cake-stage">
+      <div class="cake3d">
+        <div class="candles" id="candles">
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+          <span class="candle"><i class="flame"></i></span>
+        </div>
+        <div class="cake-top"></div>
+        <div class="cake-mid"></div>
+        <div class="cake-base"></div>
+      </div>
+    </div>
+    <button class="pill-btn glow" id="blowBtn">💨 Tahan untuk Meniup</button>
+    <p class="candle-hint" id="candleHint">tombolnya ditahan terus ya sampai apinya padam semua 💕</p>
+  </section>
+
+  <!-- ============ CINEMATIC INTRO (after correct PIN) ============ -->
+  <section class="intro hidden" id="intro">
+    <canvas class="rain" id="rainCanvas"></canvas>
+    <div class="intro-stage">
+      <div class="countdown" id="countdown"></div>
+      <div class="words" id="words"></div>
+      <div class="bear-scene" id="bearScene">
+        <div class="bear-title">HAPPY BIRTHDAY RENI</div>
+        <div class="bear-art">
+          <div class="bear">
+            <span class="ear l"></span><span class="ear r"></span>
+            <span class="face">
+              <span class="eye l"></span><span class="eye r"></span>
+              <span class="nose"></span><span class="blush l"></span><span class="blush r"></span>
+            </span>
+            <span class="arm l"></span><span class="arm r"></span>
+          </div>
+          <div class="giftbag"><span class="bag-handle"></span><span class="bag-heart">🎁</span></div>
+          <div class="bear-ground"></div>
+        </div>
+        <p class="bear-sub">tap to continue ♡</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main id="main" class="hidden">
+
+    <!-- HERO -->
+    <section class="section hero reveal">
+      <p class="eyebrow">✨ Reni's Special Day ✨</p>
+      <h1 class="hero-title">Happy<br/><em>Birthday</em><br/><span class="hero-name" id="heroName">Reni Oktavia</span></h1>
+      <span class="rule"></span>
+      <p class="hero-date" id="heroDate">17 SEPTEMBER 2026 &nbsp;·&nbsp; THE MOST SPECIAL DAY</p>
+      <p class="scroll-cue">⌄<br/><span>scroll</span></p>
+    </section>
+
+    <!-- DIGITAL BOUQUET -->
+    <section class="section bouquet reveal">
+      <p class="section-eyebrow">— MY FIRST GIFT —</p>
+      <h2 class="section-title">A Digital Bouquet</h2>
+      <p class="section-sub">Each flower holds a little message just for you</p>
+
+      <div class="vase-stage" id="vaseStage">
+        <button class="flower" data-msg="Kamu setenang mawar lembut — menenangkan dan selalu membawa kebahagiaan ke mana pun kamu pergi.">🌸</button>
+        <button class="flower" data-msg="Keceriaanmu seperti sakura yang mekar — selalu membuat hari-hariku jadi cerah dan bermakna.">🌸</button>
+        <button class="flower" data-msg="Seperti mawar anggun, kamu kuat, berharga, dan pesonamu tak pernah bisa aku lupakan.">🌹</button>
+        <button class="flower" data-msg="Seperti tulip yang mekar dengan indah, cintamu lembut dan diam-diam tumbuh setiap hari.">🌷</button>
+        <button class="flower" data-msg="Kehangatanmu seperti bunga lily — selalu menyinari dan memberi energi positif untuk sekitar.">💮</button>
+        <div class="vase"><span>🎀</span></div>
+      </div>
+
+      <p class="hint-small">Touch each flower to reveal its message 💕</p>
+      <div class="flower-msg" id="flowerMsg">Tap a flower above ✿</div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="section letter reveal">
+      <p class="section-eyebrow">— FROM MY HEART —</p>
+      <h2 class="section-title">A Letter For You</h2>
+      <article class="letter-card">
+        <span class="letter-stamp" id="letterStamp">the 28th</span>
+        <h3 class="letter-greet">💌 Happy Birthday, <span id="letterName">Reni</span>! 🎂🤍</h3>
+        <div id="letterBody"></div>
+      </article>
+    </section>
+
+    <!-- PHOTO MEMORIES -->
+    <section class="section memories reveal">
+      <p class="section-eyebrow">— A COLLECTION OF MEMORIES —</p>
+      <h2 class="section-title">Our Photo Memories</h2>
+      <p class="section-sub">Every picture holds a beautiful story</p>
+      <div class="polaroids" id="polaroids"></div>
+    </section>
+
+    <!-- PAPER PLANE TO JOGJA -->
+    <section class="section plane-sec reveal">
+      <p class="section-eyebrow">— A SPECIAL DELIVERY —</p>
+      <h2 class="section-title">A Paper Plane to Jogja</h2>
+      <p class="section-sub">Pesawat kertas ini bawa pesan spesial buat kamu</p>
+      <div class="plane-sky">
+        <div class="plane-route">
+          <span class="plane-city from">Kalses</span>
+          <span class="route-line"><i class="route-dash"></i><b class="route-plane" id="routePlane">✈</b></span>
+          <span class="plane-city to">Jogja</span>
+        </div>
+        <button class="paper-plane" id="paperPlane" aria-label="kirim pesawat kertas">
+          <svg viewBox="0 0 64 64" width="110" height="110" aria-hidden="true">
+            <polygon points="4,30 60,6 34,34" fill="#ffe3f0" stroke="#d9649f" stroke-width="2" stroke-linejoin="round"/>
+            <polygon points="34,34 60,6 44,52" fill="#f9b8d8" stroke="#d9649f" stroke-width="2" stroke-linejoin="round"/>
+            <polygon points="22,40 34,34 30,52" fill="#ec9ec7" stroke="#d9649f" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span class="plane-heart">💌</span>
+        </button>
+        <div class="plane-clouds" aria-hidden="true">
+          <span>☁️</span><span>☁️</span><span>☁️</span>
+        </div>
+      </div>
+      <button class="pill-btn glow" id="sendPlaneBtn">🛫 Terbangkan ke Jogja</button>
+      <div class="plane-msg" id="planeMsg"></div>
+    </section>
+
+    <!-- PLAYLIST -->
+    <section class="section playlist reveal">
+      <h2 class="section-title">Special Playlist</h2>
+      <p class="section-sub">Songs that always remind me of you 🎶</p>
+      <div class="player">
+        <div class="disc" id="disc"><span class="disc-center"></span></div>
+        <p class="np-title" id="npTitle">—</p>
+        <p class="np-artist" id="npArtist">—</p>
+        <div class="progress" id="progress"><span id="progressFill"></span></div>
+        <div class="time-meta"><span id="timeCurrent">0:00</span><span id="timeDuration">0:00</span></div>
+        <div class="player-btns">
+          <button id="prevBtn" aria-label="prev">⏮</button>
+          <button id="playBtn" class="play" aria-label="play">▶</button>
+          <button id="nextBtn" aria-label="next">⏭</button>
+        </div>
+      </div>
+      <ul class="song-list" id="songList"></ul>
+    </section>
+
+    <!-- JAR -->
+    <section class="section jar-sec reveal">
+      <p class="section-eyebrow">— FROM MY HEART TO YOURS —</p>
+      <h2 class="section-title">Reasons I'm Grateful to Know You</h2>
+      <p class="section-sub">Shake the jar and pick a note 🫙</p>
+      <div class="jar" id="jar">
+        <div class="jar-lid"></div>
+        <div class="jar-body">
+          <span class="luv l1">💗</span>
+          <span class="luv l2">💖</span>
+          <span class="luv l3">🤍</span>
+          <span class="luv l4">💗</span>
+          <span class="luv l5">💖</span>
+          <span class="luv l6">🩷</span>
+          <span class="luv l7">🤍</span>
+          <span class="luv l8">💖</span>
+          <span class="luv l9">💗</span>
+          <span class="luv l10">🩷</span>
+        </div>
+      </div>
+      <button class="pill-btn" id="shakeBtn">🫙 Shake the Jar</button>
+      <div class="jar-note" id="jarNote"></div>
+    </section>
+
+    <!-- FINAL WISH -->
+    <section class="section wish reveal">
+      <p class="eyebrow">✨ With all my heart ✨</p>
+      <h2 class="wish-title">May your life always be <em>filled</em> with love & smiles</h2>
+      <p class="wish-text" id="wishText"></p>
+      <button class="pill-btn glow" id="celebrateBtn">🎂 Celebrate</button>
+      <p class="signoff">With love that never runs out 💕</p>
+    </section>
+
+  </main>
+
+  <!-- ============ HAPPY BIRTHDAY MODAL ============ -->
+  <div class="modal hidden" id="hbdModal">
+    <div class="modal-flowers" id="modalFlowers" aria-hidden="true"></div>
+    <div class="modal-card">
+      <div class="cake">🎂</div>
+      <h2 class="modal-title">Happy Birthday!</h2>
+      <p class="modal-sub">The most special <span id="modalName">Reni</span> ✨</p>
+      <p class="modal-foot">With love that never runs out 💕</p>
+      <button class="pill-btn" id="closeModal">Close ✕</button>
+    </div>
+  </div>
+
+  <!-- ============ PHOTO LIGHTBOX ============ -->
+  <div class="lightbox hidden" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="tutup">✕</button>
+    <figure class="lb-figure">
+      <img id="lbImg" alt="memory" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <!-- Bootstrap 5 JS bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
